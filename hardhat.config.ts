@@ -25,7 +25,11 @@ const config: HardhatUserConfig = {
   },
   networks: {
     amoy: {
-      url: `https://rpc.ankr.com/polygon_amoy`,
+      url: `https://polygon-amoy-bor-rpc.publicnode.com`,
+      accounts: [process.env.PRIVATE_KEY]
+    },
+    sepolia: {
+      url: `https://ethereum-sepolia-rpc.publicnode.com`,
       accounts: [process.env.PRIVATE_KEY]
     }
   },
